@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* -------- Header --------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: navy;
+}
+
+.header__title{
+    margin: 0 3rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.header__list{
+    display: flex;
+    justify-content: space-between;  
+    list-style-type: none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.header__list__item{
+    margin: 0 3rem;
+}
+
+.header__list__link{
+    text-decoration: none;
+    color: white;
+}
+
+.header__list__link:hover{
+    color: rgb(151, 172, 194);
+}
+
+/* -------- Componente 1 - Fake Store API --------- */
+
+.c1__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.c1__subtitle{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: lightslategray;  
+    color: white;
+}
+
+.c1__list{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 22rem 22rem 22rem 22rem;
+}
+
+.c1__list__text{
+    margin: .5rem;
+    text-align: center;
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.c1__img{
+    margin: 1rem 1rem 1rem 3rem;
+    width: 70%;
+    height: 60%;
+}
+
+.c1__listItem{
+    margin: 0rem .6rem .6rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.c1__listItem:hover{
+    border: 2px solid lightslategray;
+    border-radius: 4%;
+}
+
+.c1__link{
+    text-decoration: none;
+    color: black;
+}
+
+.c1__link:hover {
+    cursor: pointer;
+    color: lightslategray;
+}
+
+/* -------- Detalles Componente 1 - Detalles de producto --------- */
+
+.detallesC1__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.detallesC1__subtitle{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: lightslategray;  
+    color: white;
+}
+
+.detallesC1__subtitle::first-letter{
+    text-transform: uppercase;
+}
+
+.flecha{
+    margin: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.flecha__link{
+    text-decoration: none;
+    color: black;
+}
+
+.detallesC1__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detallesC1__img{
+    margin: .3rem;
+    width: 15%;
+    height: auto;
+}
+
+.detallesC1__description, .detallesC1__price{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 25%;
+    text-align: center;
+}
+
+.detallesC1__price{
+    font-size: .8rem;
+    padding: .3rem;
+    font-style: italic;
+    border: 1px solid lightslategray;
+    border-radius: 10px;
+}
+
+.detallesC1__price:hover, .flecha:hover{
+    cursor: pointer;
+    color:lightslategray;
+}
+
+/* -------- Componente 2 - Users API --------- */
+
+.c2__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.c2__subtitle{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: lightslategray;  
+    color: white;
+}
+
+.c2__card{
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+
+.c2__text{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.1rem;
+}
+
+.c2__text__name{
+    margin-top: 1.5rem;
+}
+
+/* -------- Componente 3 - Dragons API --------- */
+
+.c3__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.c3__subtitle{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: lightslategray;  
+    color: white;
+}
+
+.c3__list{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.c3__listItem{
+   margin: 1rem; 
+   width: 7rem;
+}
+
+.c3__listItem:hover {
+    cursor: pointer;
+    color: lightslategray;
+    font-style: italic;
+    background-color: black;
+    padding: .4rem;
+    border-radius: 3px;
+}
+
+
+/* -------- Componente 4 - Rick and Morty API --------- */
+
+.c4__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.c4__contenedor__cards{
+    margin: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 22rem 22rem 22rem 22rem;
+}
+
+.c4__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.7rem .7rem .7rem 1.7rem;
+    padding: 1rem;
+}
+
+.c4__card:hover {
+    border: 1px solid lightslategray;
+    border-radius: 4%;
+}
+
+.c4__text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.c4__img{
+    max-width: 15rem;
+    height: auto;
+    margin: .5rem;
+}
+
+.c4__link{
+    text-decoration: none;
+    color:black;
+}
+
+.c4__link:hover {
+    cursor: pointer;
+    color: lightslategray;
+}
+
+/* -------- Detalles Componente 4 - Detalles de personaje --------- */
+
+.detallesC4__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+    text-align: center;
+}
+
+.detallesC4__card{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detallesC4__img{
+    margin: .3rem;
+    width: 20%;
+    height: auto;
+}
+
+.detallesC4__description{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 25%;
+    text-align: center;
+}
+
+/* -------- Componente 5 - Pokemons API --------- */
+
+.c5__title{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: lightslategray;
+}
+
+.c5__subtitle{
+    margin: 1rem 3rem;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: lightslategray;  
+    color: white;
+}
+
+.c5__list{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.c5__listItem {
+    width: 6rem;
+   margin: 1rem; 
+}
+
+.c5__listItem::first-letter{
+    text-transform: uppercase;
+}
+
+.c5__listItem:hover {
+    cursor: pointer;
+    color: lightslategray;
+    font-style: italic;
+    background-color: black;
+    padding: .4rem;
+    border-radius: 3px;
+}
+
